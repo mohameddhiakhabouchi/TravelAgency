@@ -1,0 +1,134 @@
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+  color: #a94442;
+}
+.has-error .form-control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.has-error .form-control:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+.has-error .input-group-addon {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #a94442;
+}
+.has-error .form-control-feedback {
+  color: #a94442;
+}
+
+.full_height{
+  height: -webkit-fill-available !important;
+}
+
+.full_width{
+  width: -webkit-fill-available !important;
+}
+
+.top_zero{
+  top:0 !important;
+}
+
+.black_tr_bg{
+  background: #00000045 !important;
+}
+
+.cd_small_logo{
+  width: 40%;
+  height: auto;
+}
+
+.cd_xs_logo{
+  width:25%;
+  height:auto;
+}
+
+.cd_medium_logo{
+  width: 60%;
+  height: auto;
+}
+
+router-outlet ~ * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.color_blue{
+  color:#1b84e7 !important;
+}
+
+@media (min-width: 576px) and (max-width:767px) {
+  .media-body{
+    text-align: center !important;
+  }
+}
+
+.navbar-fixed-top {
+  position: fixed !important;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@media only screen and (min-width: 1025px) {
+  .navbar-height {
+    height: 17%;
+  }
+  .mt-lg-carousel{
+    margin-top: 140px !important;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .MultiCarousel .MultiCarousel-inner .item > div {    margin-right: 30% !important; margin-left: 33% !important;}
+
+}
+
+.shadow{
+  box-shadow: 0px 6px 5px 0px rgba(220, 217, 217, 0.59);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(220, 217, 217, 0.59);
+}
+
+.outer-div
+{
+  height: 50vh;
+  overflow: hidden;
+}
+.img-destination
+{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.img-destination:hover
+{
+  transform: scale(1.2);
+}
+
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+.MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+.MultiCarousel .MultiCarousel-inner .item { float: left;}
+.MultiCarousel .MultiCarousel-inner .item > div {  height: 170px;border-radius:50% !important;text-align: center; padding:10px; margin:10px; background:#000; color:#666;}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+.MultiCarousel .leftLst { left:0; }
+.MultiCarousel .rightLst { right:0; }
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
